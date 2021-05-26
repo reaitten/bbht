@@ -19,6 +19,16 @@ sudo apt-get install -y rename
 sudo apt-get install -y xargs
 sudo apt-get install -y screen
 
+sudo apt-get install -y v4l2loopback-dkms
+sudo apt-get install -y ffmpeg
+sudo add-apt-repository -y ppa:obsproject/obs-studio
+sudo apt-get -y update
+sudo apt-get install -y obs-studio
+
+sudo apt-get -y install wget
+wget https://zoom.us/client/latest/zoom_amd64.deb
+sudo apt-get install -y ./zoom_amd64.deb
+
 echo "installing nmap"
 apt-get install -y nmap
 echo "done"
