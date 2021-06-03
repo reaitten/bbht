@@ -43,8 +43,6 @@ rm naabu-*.tar
 rm README.md
 rm LICENSE.md
 
-
-
 echo "installing wa00f"
 git clone https://github.com/EnableSecurity/wafw00f.git
 python3 wafw00f/setup.py install
@@ -98,7 +96,9 @@ echo "Installing massdns"
 git clone https://github.com/blechschmidt/massdns.git
 echo "done"
 
-
+echo "installing rclone"
+curl https://rclone.org/install.sh | bash
+echo "done"
 
 echo "Installing domain_analyzer"
 git clone https://github.com/eldraco/domain_analyzer.git
