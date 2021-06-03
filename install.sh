@@ -12,7 +12,6 @@ sudo apt-get install -y build-essential libssl-dev libffi-dev python-dev
 sudo apt-get install -y python-setuptools
 sudo apt-get install -y libldns-dev
 sudo apt-get install -y python3-pip
-sudo apt-get install -y python-pip
 sudo apt-get install -y python-dnspython
 sudo apt-get install -y git
 sudo apt-get install -y rename
@@ -107,7 +106,7 @@ echo "done"
 echo "installing Sublist3r"
 git clone https://github.com/aboul3la/Sublist3r.git
 cd Sublist3r*
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 cd ~/tools/
 echo "done"
 
@@ -171,7 +170,7 @@ echo "done"
 echo "installing asnlookup"
 git clone https://github.com/yassineaboukir/asnlookup.git
 cd ~/tools/asnlookup
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 cd ~/tools/
 echo "done"
 
